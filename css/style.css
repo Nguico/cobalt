@@ -1,0 +1,28 @@
+::-webkit-scrollbar {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    display: none;
+}
+::-webkit-scrollbar-track {
+    display: none;
+}
+section {
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.bordure {
+  border: solid #F4F3DF 1em;
+  position:fixed;
+  display:block;
+}
+
+.vague-haut {
+  background-image: url(../images/vague-haut.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
