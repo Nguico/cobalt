@@ -75,3 +75,10 @@ section {
   font-weight: 100;
   width: 700px;
 }
+
+.pierres {
+  background: url(../images/pierres.png) no-repeat left -60px top -240px;
+  background-size:110%;
+  width:120%;
+  height:1000px;
+}
