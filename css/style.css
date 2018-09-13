@@ -75,6 +75,15 @@ section {
   height: 200px;
 }
 
+@keyframes rebond {
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .fleche::before {
   content: '↓';
   color: #F4F3DF;
@@ -89,16 +98,21 @@ section {
   bottom: 70px;
   left: 50%;
   margin-left: -30px;
-  animation: bounce 2s ease infinite;
+  animation: rebond 2s ease infinite;
 }
 
-@keyframes bounce {
-  50% {
-    transform: translateY(-50%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+@keyframes vagues {
+    0% {
+        background-position: right top, -100px bottom;
+    }
+
+    50% {
+        background-position: right -100px top, -200px bottom;
+    }
+
+		100% {
+        background-position: right top, -100px bottom;
+    }
 }
 
 .vagues {
@@ -106,6 +120,7 @@ section {
   background-size: 120%;
   width:120%;
   height:1000px;
+	animation: vagues 20s linear infinite;
 }
 
 @keyframes zoom {
