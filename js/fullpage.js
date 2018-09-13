@@ -84,7 +84,7 @@
 
     var $window = $(window);
     var $document = $(document);
-
+    
     $.fn.fullpage = function(options) {
 
         // common jQuery objects

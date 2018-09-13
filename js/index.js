@@ -1,8 +1,8 @@
-$(document).ready(function() {
+jQuery(document).ready(function() {
 
      new WOW().init();
 
-    $('#fullpage').fullpage({
+    jQuery('#fullpage').fullpage({
       scrollBar: true,
       navigation: true,
       navigationTooltips: ['Home', 'Histoire', 'Créations', 'Arts'],
@@ -13,25 +13,25 @@ $(document).ready(function() {
   int = -1;
   color_array = ['#22427C','black','#22427C','black'];
 
-  $('section').each(function(){
+  jQuery('section').each(function(){
     int++
-    $(this).addClass('grid-item-' + int).css('background-color', color_array[int]);
+    jQuery(this).addClass('grid-item-' + int).css('background-color', color_array[int]);
   });
 
 });
 
-$("#container").mousemove(function(e) {
+jQuery("#container").mousemove(function(e) {
   parallaxIt(e, ".bleu", -100);
   parallaxIt(e, ".titre", 250);
 });
 
 function parallaxIt(e, target, movement) {
-  var $this = $("#container");
-  var relX = e.pageX - $this.offset().left;
-  //var relY = e.pageY - $this.offset().top;
+  var jQuerythis = jQuery("#container");
+  var relX = e.pageX - jQuerythis.offset().left;
+  //var relY = e.pageY - jQuerythis.offset().top;
 
   TweenMax.to(target, 1, {
-    x: (relX - $this.width() / 2) / $this.width() * movement,
-    //y: (relY - $this.height() / 2) / $this.height() * movement
+    x: (relX - jQuerythis.width() / 2) / jQuerythis.width() * movement,
+    //y: (relY - jQuerythis.height() / 2) / jQuerythis.height() * movement
   });
 }
