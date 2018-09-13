@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
     jQuery('#fullpage').fullpage({
       scrollBar: true,
       navigation: true,
-      navigationTooltips: ['Accueil', 'Historique', 'Usages', 'Arts'],
+      navigationTooltips: ['Accueil', 'Historique', 'Usages', 'Art'],
       loopBottom: true,
       sectionSelector: 'section'
     });
