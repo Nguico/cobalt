@@ -108,14 +108,45 @@ section {
   height:1000px;
 }
 
+@keyframes zoom {
+    0% {
+        background-size:145%;
+    }
+
+    50% {
+        background-size:147%;
+    }
+
+		100% {
+        background-size:145%;
+    }
+}
+
 .ronds {
   background: url(../images/ronds.png) no-repeat left -115px top -420px;
   background-size:145%;
+	animation: zoom 5s linear infinite;
+}
+
+@keyframes flottement {
+    0% {
+        background-position: left -60px top -240px;
+    }
+
+    50% {
+        background-position: left -60px top -220px;
+    }
+
+		100% {
+        background-position: left -60px top -240px;
+    }
 }
 
 .pierres {
   background: url(../images/pierres.png) no-repeat left -60px top -240px;
   background-size:110%;
+	overflow: hidden;
+	animation: flottement 5s linear infinite;
 }
 
 .fleurs {
@@ -123,9 +154,25 @@ section {
   background-size:103%;
 }
 
+@keyframes mouvement {
+    0% {
+        background-position: top center;
+    }
+
+    50% {
+        background-position: top -100px center;
+    }
+
+		100% {
+        background-position: top center;
+    }
+}
+
 .iris {
   background: url(../images/iris.jpg) no-repeat top center;
   background-size:cover;
+	background-attachment: fixed;
+	animation: mouvement 10s linear infinite;
 }
 
 .iris .van-gogh {
@@ -135,5 +182,5 @@ section {
   background-size: contain;
   width:300px;
   height: 100%;
-  animation: pulse 4s ease infinite;
+  animation: pulse 5s ease infinite;
 }
