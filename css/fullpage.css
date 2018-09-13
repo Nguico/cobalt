@@ -89,7 +89,7 @@ html.fp-enabled,
     -webkit-transform: translate3d(0,0,0);
 }
 #fp-nav.right {
-    right: 60px;
+    right: 6px;
 }
 #fp-nav.left {
     left: 17px;
@@ -149,7 +149,7 @@ html.fp-enabled,
     height: 4px;
     width: 4px;
     border: 0;
-    background: #F4F3DF;
+    background: #22427C;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
@@ -168,14 +168,17 @@ html.fp-enabled,
     position: absolute;
     top: -2px;
     color: #F4F3DF;
+    background: #22427C;
+    padding: 5px 15px 5px 15px;
     font-size: 14px;
-    font-family: arial, helvetica, sans-serif;
+    font-family: berthold;
     white-space: nowrap;
     max-width: 220px;
     overflow: hidden;
     display: block;
     opacity: 0;
     width: 0;
+    margin-right: 7px;
 }
 #fp-nav ul li:hover .fp-tooltip,
 #fp-nav.fp-show-active a.active + .fp-tooltip {
