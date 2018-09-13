@@ -48,10 +48,10 @@ section {
 }
 
 .titre-petit {
-  width: 250px;
+  width: 130px;
   position: absolute;
-  left: 20px;
-  top: 60px;
+  left: 30px;
+  top: 70px;
 }
 
 .ronds {
@@ -63,15 +63,15 @@ section {
 
 .sous-titre {
   color: #F4F3DF;
-  font-family: noe-display;
-  font-size: 1em;
+  font-family: berthold;
+  font-size: 0.5em;
   width: 700px;
 }
 
 .texte {
   color: #F4F3DF;
   font-family: berthold;
-  font-size: 0.4em;
-  font-weight: 300;
+  font-size: 0.45em;
+  font-weight: 100;
   width: 700px;
 }
