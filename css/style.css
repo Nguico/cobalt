@@ -31,7 +31,8 @@ section {
 
 .credits {
   background: url(../images/credits.png) no-repeat center;
-  height: 300px;
+  background-size:450px;
+  height: 350px;
   width: 100%;
   position: absolute;
 }

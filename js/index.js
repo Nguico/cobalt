@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
     });
 
   int = -1;
-  color_array = ['#22427C','black','#22427C','black'];
+  color_array = ['#22427C','#22427C','#22427C','#22427C'];
 
   jQuery('section').each(function(){
     int++
