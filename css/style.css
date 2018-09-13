@@ -27,11 +27,19 @@ section {
   overflow: hidden;
 }
 
+.titre {
+  animation: fadeInLeft 0.7s ease;
+}
+
 .titre-petit {
   width: 130px;
   position: absolute;
   left: 30px;
   top: 70px;
+}
+
+.bleu {
+  animation: fadeInRight 0.7s ease;
 }
 
 .sous-titre {
@@ -55,6 +63,7 @@ section {
   height: 350px;
   width: 100%;
   position: absolute;
+  animation: fadeIn 0.7s ease;
 }
 
 .informations {
