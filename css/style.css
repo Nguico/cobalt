@@ -1,11 +1,6 @@
 @font-face{
 	font-family: 'berthold';
-	src: url("../polices/berthold.otf");
-}
-
-@font-face{
-	font-family: 'noe-display';
-	src: url("noe-display.ttf");
+	src: url("../police/berthold.otf");
 }
 
 ::-webkit-scrollbar {
@@ -18,7 +13,7 @@
     display: none;
 }
 
-body { padding: 40px; background-color: #F4F3DF; }
+body { padding: 40px; background-color: #F4F3DF!important; }
 body:before, body:after { content: ""; position: fixed; z-index: 999; background: inherit; left: 0; right: 0; height: 35px; }
 body:before { top: 0; }
 body:after { bottom: 0; }
@@ -32,33 +27,11 @@ section {
   overflow: hidden;
 }
 
-.vagues {
-  background: url(../images/vague-haut.png) no-repeat right top, url(../images/vague-bas.png) no-repeat -100px bottom;
-  background-size: 120%;
-  width:120%;
-  height:1000px;
-}
-
-.credits {
-  background: url(../images/credits.png) no-repeat center;
-  background-size: 450px;
-  height: 350px;
-  width: 100%;
-  position: absolute;
-}
-
 .titre-petit {
   width: 130px;
   position: absolute;
   left: 30px;
   top: 70px;
-}
-
-.ronds {
-  background: url(../images/ronds.png) no-repeat left -115px top -420px;
-  background-size:145%;
-  width:120%;
-  height:1000px;
 }
 
 .sous-titre {
@@ -76,16 +49,56 @@ section {
   width: 700px;
 }
 
+.credits {
+  background: url(../images/credits.png) no-repeat center;
+  background-size: 450px;
+  height: 350px;
+  width: 100%;
+  position: absolute;
+}
+
+.informations {
+  position: absolute;
+  bottom: 0;
+  background: url(../images/informations.png) no-repeat left top 40px, #F4F3DF;
+  background-size: 250px;
+  width: 100%;
+  height: 200px;
+}
+
+.vagues {
+  background: url(../images/vague-haut.png) no-repeat right top, url(../images/vague-bas.png) no-repeat -100px bottom;
+  background-size: 120%;
+  width:120%;
+  height:1000px;
+}
+
+.ronds {
+  background: url(../images/ronds.png) no-repeat left -115px top -420px;
+  background-size:145%;
+}
+
 .pierres {
   background: url(../images/pierres.png) no-repeat left -60px top -240px;
   background-size:110%;
-  width:120%;
-  height:1000px;
 }
 
 .fleurs {
   background: url(../images/fleurs.png) no-repeat left -20px top -90px;
   background-size:103%;
-  width:120%;
-  height:1000px;
+}
+
+.iris {
+  background: url(../images/iris.jpg) no-repeat top center;
+  background-size:cover;
+}
+
+.iris .van-gogh {
+  position: absolute;
+  right: 0;
+  background: url(../images/van-gogh.png) no-repeat;
+  background-size: contain;
+  width:300px;
+  height: 100%;
+  animation: pulse 4s ease infinite;
 }

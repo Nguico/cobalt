@@ -5,13 +5,13 @@ jQuery(document).ready(function() {
     jQuery('#fullpage').fullpage({
       scrollBar: true,
       navigation: true,
-      navigationTooltips: ['Accueil', 'Historique', 'Usages', 'Art'],
+      navigationTooltips: ['Accueil', 'Historique', 'Usages', 'Art', 'Van Gogh'],
       loopBottom: true,
       sectionSelector: 'section'
     });
 
   int = -1;
-  color_array = ['#22427C','#22427C','#22427C','#22427C'];
+  color_array = ['#22427C','#22427C','#22427C','#22427C', '#22427C'];
 
   jQuery('section').each(function(){
     int++
@@ -28,10 +28,8 @@ jQuery("#container").mousemove(function(e) {
 function parallaxIt(e, target, movement) {
   var jQuerythis = jQuery("#container");
   var relX = e.pageX - jQuerythis.offset().left;
-  //var relY = e.pageY - jQuerythis.offset().top;
 
   TweenMax.to(target, 1, {
     x: (relX - jQuerythis.width() / 2) / jQuerythis.width() * movement,
-    //y: (relY - jQuerythis.height() / 2) / jQuerythis.height() * movement
   });
 }
