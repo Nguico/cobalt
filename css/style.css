@@ -7,22 +7,31 @@
 ::-webkit-scrollbar-track {
     display: none;
 }
+
+body { padding: 40px; background-color: #F4F3DF; }
+body:before, body:after { content: ""; position: fixed; z-index: 999; background: inherit; left: 0; right: 0; height: 35px; }
+body:before { top: 0; }
+body:after { bottom: 0; }
+
 section {
   font-size: 35px;
   text-align: center;
   color: white;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
+  overflow: hidden;
 }
 
-.bordure {
-  border: solid #F4F3DF 1em;
-  position:fixed;
-  display:block;
+.vagues {
+  background: url(../images/vague-haut.png) no-repeat right top, url(../images/vague-bas.png) no-repeat -100px bottom;
+  background-size:120%;
+  width:120%;
+  height:1000px;
 }
 
-.vague-haut {
-  background-image: url(../images/vague-haut.png);
-  background-repeat: no-repeat;
-  background-position: center top;
+.credits {
+  background: url(../images/credits.png) no-repeat center;
+  height: 500px;
+  width: 100%;
+  position: absolute;
 }

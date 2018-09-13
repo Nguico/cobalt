@@ -1,20 +1,17 @@
 $(document).ready(function() {
 
-    //activate wow.js
      new WOW().init();
 
-    //activate fullpage.js
     $('#fullpage').fullpage({
       scrollBar: true,
       navigation: true,
-      navigationTooltips: ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4'],
+      navigationTooltips: ['Home', 'Histoire', 'Créations', 'Arts'],
       loopBottom: true,
       sectionSelector: 'section'
     });
 
-  //apply color to each section from array
   int = -1;
-  color_array = ['#22427C','#c0392b','#9b59b6','#3498db','#f1c40f','#16a085'];
+  color_array = ['#22427C','black','#22427C','black'];
 
   $('section').each(function(){
     int++
@@ -24,8 +21,8 @@ $(document).ready(function() {
 });
 
 $("#container").mousemove(function(e) {
-  parallaxIt(e, ".slide", -100);
-  parallaxIt(e, "img", 200);
+  parallaxIt(e, ".bleu", -100);
+  parallaxIt(e, ".titre", 250);
 });
 
 function parallaxIt(e, target, movement) {
