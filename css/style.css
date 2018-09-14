@@ -165,8 +165,28 @@ section {
 }
 
 .fleurs {
-  background: url(../images/fleurs.png) no-repeat left -20px top -90px;
-  background-size:103%;
+  background: url(../images/fleurs.png) no-repeat left -400px top -140px;
+  background-size:130%;
+}
+
+@-webkit-keyframes rotation {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.fleur {
+	position: absolute;
+	background: url(../images/fleur.png) no-repeat;
+	background-size: cover;
+	left: -400px;
+	bottom: -400px;
+	width: 800px;
+	height: 800px;
+	animation: rotation 30s linear infinite;
 }
 
 @keyframes mouvement {
