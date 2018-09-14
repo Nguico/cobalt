@@ -172,9 +172,11 @@ section {
 @-webkit-keyframes rotation {
     from{
         -webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
     }
     to{
         -webkit-transform: rotate(360deg);
+				transform: rotate(0deg);
     }
 }
 
@@ -186,6 +188,7 @@ section {
 	bottom: -400px;
 	width: 800px;
 	height: 800px;
+	-webkit-animation: rotation 30s linear infinite;
 	animation: rotation 30s linear infinite;
 }
 
