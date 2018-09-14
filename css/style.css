@@ -116,7 +116,7 @@ section {
 }
 
 .vagues {
-  background: url(../images/vague-haut.png) no-repeat right top, url(../images/vague-bas.png) no-repeat -100px bottom;
+  background: url(../images/vague-haut.png) repeat-x right top, url(../images/vague-bas.png) repeat-x -100px bottom;
   background-size: 120%;
   width:120%;
   height:1000px;
@@ -221,4 +221,18 @@ section {
   width:300px;
   height: 100%;
   animation: pulse 5s ease infinite;
+}
+
+@media screen and (max-width: 1140px) {
+	body {
+    padding: 0px!important;
+}
+body:before, body:after {
+    height: 0px;
+}
+.credits {
+    background-size: contain;
+    width: 90%;
+
+}
 }
